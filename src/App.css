@@ -36,3 +36,63 @@
     transform: rotate(360deg);
   }
 }
+
+/* loading spinner css */
+.spinner {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #207567;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  animation: spin 1s linear infinite;
+}
+
+.dashedShortSpinner {
+  border: 10px solid #f3f3f3;
+  border-top: 10px dashed #207567;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+}
+
+.buttonSpinner {
+  border: 10px solid #f3f3f3;
+  border-top: 10px solid #207567;
+  border-radius: 50%;
+  width: 10px;
+  height: 10px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+/*  */
+
+/* scrollbar style css */
+.scrollbarStyle {
+  --scrollbar-foreground: #115e59;
+  --scrollbar-background: #dfeae2;
+  /* Foreground, Background */
+  scrollbar-color: var(--scrollbar-foreground) var(--scrollbar-background);
+}
+
+.scrollbarStyle::-webkit-scrollbar {
+  width: 5px; /* Mostly for vertical scrollbars */
+  height: 5px; /* Mostly for horizontal scrollbars */
+}
+.scrollbarStyle::-webkit-scrollbar-thumb {
+  /* Foreground */
+  background: var(--scrollbar-foreground);
+}
+.scrollbarStyle::-webkit-scrollbar-track {
+  /* Background */
+  background: var(--scrollbar-background);
+}
+/*  */
